@@ -8,17 +8,10 @@ WITH
       JOIN d_ym ON f_st_sum.ymid = d_ym.ymid
       JOIN sido_cd ON f_st_sum.sidonm = sido_cd.sidonm
     WHERE
-      d_ym.year = CASE
-        WHEN {{year_option}} = '동년전월' THEN CAST(EXTRACT(YEAR FROM CURRENT_DATE) AS CHARACTER(4))
-        ELSE CAST(EXTRACT(YEAR FROM CURRENT_DATE) - 1 AS CHARACTER(4))
-      END
-      AND d_ym.month = CASE
-        WHEN {{year_option}} = '동년전월' THEN CASE
-          WHEN EXTRACT(DAY FROM CURRENT_DATE) <= 5 THEN TO_CHAR(EXTRACT(MONTH FROM CURRENT_DATE) - 2, 'FM00')
-          ELSE TO_CHAR(EXTRACT(MONTH FROM CURRENT_DATE) - 1, 'FM00')
-        END
-        ELSE TO_CHAR(EXTRACT(MONTH FROM CURRENT_DATE), 'FM00')
-      END
+      d_ym.ymid = COALESCE(
+        {{year_month}}, 
+        TO_CHAR(DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '1 month', 'YYYYMM')
+      )
       AND sido_cd.sidonm = {{sidonm}} -- 선택된 시/도의 이름
   )
 SELECT
