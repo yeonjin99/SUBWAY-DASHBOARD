@@ -8,8 +8,5 @@
 
 ## 👉 전체 시연
 ---
-[![시연](https://youtube.be/qTVVuJfihAs)]
-
-
 https://github.com/user-attachments/assets/26497e33-b912-42db-9f9d-fb60fe1aa7cf
 
