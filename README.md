@@ -7,6 +7,5 @@
 - 효율적인 인력 배치 도구 개발 필요
 
 ## 👉 전체 시연
----
 https://github.com/user-attachments/assets/26497e33-b912-42db-9f9d-fb60fe1aa7cf
 
