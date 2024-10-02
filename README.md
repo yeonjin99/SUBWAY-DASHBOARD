@@ -14,6 +14,8 @@
 [시도코드](https://sgis.kostat.go.kr/developer/html/openApi/api/dataCode/SidoCode.html)
 
 ## 👉 Data Pipeline
+![image](https://github.com/user-attachments/assets/81f17520-3a24-4d12-9e46-778f0c784219)
+
 
 ## 👉 전체 시연
 https://github.com/user-attachments/assets/26497e33-b912-42db-9f9d-fb60fe1aa7cf
