@@ -17,11 +17,15 @@
 
 [시도코드](https://sgis.kostat.go.kr/developer/html/openApi/api/dataCode/SidoCode.html)
 
+
 ### 스케줄러
 데이터가 매 달 한번 입력되어 처리되어야하기에, 배치 작업에(batch processing)에 적합한 Airflow를 선택하였습니다.
 
+
 ### ETL & DW
 ETL 과정의 코드와 DW 설계는 [airflow](airflow) 폴더를 참조하시길 바랍니다.
+
+
 
 ## 👉 전체 시연
 https://github.com/user-attachments/assets/26497e33-b912-42db-9f9d-fb60fe1aa7cf
