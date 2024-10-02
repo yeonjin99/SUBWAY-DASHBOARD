@@ -10,7 +10,7 @@
 데이터 파이프라인을 직접 구축하는 프로젝트입니다.
 ![image](https://github.com/user-attachments/assets/81f17520-3a24-4d12-9e46-778f0c784219)
 
-### 👉 원천 데이터
+### 원천 데이터
 [시간대별 이용량](https://data.seoul.go.kr/dataList/OA-12252/S/1/datasetView.do)
 
 [위경도](https://www.data.go.kr/data/15099316/fileData.do?recommendDataYn=Y)
